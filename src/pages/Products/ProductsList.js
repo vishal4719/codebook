@@ -26,7 +26,7 @@ export const ProductsList = () => {
       }
     }
     fetchProducts();
-  }, [searchTerm]);  //estint-disable-line
+  }, [searchTerm,initialProductList]);  //estint-disable-line
 
   return (
     <main>
