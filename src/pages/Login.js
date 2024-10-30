@@ -24,8 +24,8 @@ export const Login = () => {
     }
   }
   async function handleLoginGuest(){
-    email.current.value ="vishal@example.com";
-    password.current.value = "vvvvvvvv";
+    email.current.value = process.env.REACT_APP_GUEST_LOGIN;
+    password.current.value = process.env.REACT_APP_GUEST_PASSWORD;
     try{
       const authDetail = {
         email: email.current.value,
@@ -73,7 +73,7 @@ export const Login = () => {
               </button>
             </form>
             {/* Optional Guest Login Button */}
-            <button  onClick={()=>handleLoginGuest()} className="mt-4 w-full py-3 text-white bg-indigo-500 rounded-lg font-semibold hover:bg-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+            <button  onClick={()=>handleLoginGuest} className="mt-4 w-full py-3 text-white bg-indigo-500 rounded-lg font-semibold hover:bg-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-300">
               Login As Guest
             </button>
           </section>
