@@ -73,7 +73,7 @@ export const Login = () => {
               </button>
             </form>
             {/* Optional Guest Login Button */}
-            <button  onClick={()=>handleLoginGuest} className="mt-4 w-full py-3 text-white bg-indigo-500 rounded-lg font-semibold hover:bg-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+            <button  onClick={handleLoginGuest} className="mt-4 w-full py-3 text-white bg-indigo-500 rounded-lg font-semibold hover:bg-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-300">
               Login As Guest
             </button>
           </section>
