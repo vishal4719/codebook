@@ -23,6 +23,20 @@ export const Login = () => {
       toast.error(error.message, {closeButton: true, position: "bottom-center"});
     }
   }
+  async function handleLoginGuest(){
+    email.current.value ="vishal@example.com";
+    password.current.value = "vvvvvvvv";
+    try{
+      const authDetail = {
+        email: email.current.value,
+        password: password.current.value
+      }
+      const data = await login(authDetail);
+      data.accessToken ? navigate("/products") : toast.error(data);
+    } catch(error){
+      toast.error(error.message, {closeButton: true, position: "bottom-center"});
+    }
+  }
 
   return (
           <main className="flex items-center justify-center p-5">
@@ -59,7 +73,7 @@ export const Login = () => {
               </button>
             </form>
             {/* Optional Guest Login Button */}
-            <button className="mt-4 w-full py-3 text-white bg-indigo-500 rounded-lg font-semibold hover:bg-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+            <button  onClick={()=>handleLoginGuest()} className="mt-4 w-full py-3 text-white bg-indigo-500 rounded-lg font-semibold hover:bg-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-300">
               Login As Guest
             </button>
           </section>

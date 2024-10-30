@@ -317,40 +317,10 @@
   ],
   "users": [
     {
-      "email": "shubham@example.com",
-      "password": "$2a$10$jwZkkaP6gmxOGuGUtnRS1u/SLjaFChpjGI4lTNp8FxkYmrY/JgLjO",
-      "name": "Shubham",
-      "id": 1
-    },
-    {
-      "email": "sdfghjkl@sdfg",
-      "password": "$2a$10$BCkpD8fXHL92ug/hUo1mfOLhNc3Eh7ljsD1xKjpifkmK6G/EKWnvy",
-      "name": "sdfghj,.",
-      "id": 2
-    },
-    {
-      "email": "ifhvfvfvfv@gmail.com",
-      "password": "$2a$10$32FFMHQWr0dqajvf9t.fyup/OMK0ehrA8Uv4lnZICirq5t.ebN4tu",
-      "name": "vishak",
-      "id": 3
-    },
-    {
-      "email": "vishal@gmail.com",
-      "password": "$2a$10$GF.kvyojpGwGjUBgChNNI./TmoNFsSyzeyQIZ1IJ8qEssF5D8OdMm",
-      "name": "vishal",
-      "id": 4
-    },
-    {
-      "email": "alex@gmail.com",
-      "password": "$2a$10$IVMzTs8fT8k3EORJSutJFuQzIngsN4AlxYFpAN61exspytblJIbFG",
-      "name": "alex",
-      "id": 5
-    },
-    {
       "email": "vishal@example.com",
       "password": "$2a$10$.ku3P62hyHxFka159vXpy.TdGyLqZXc.OEQbQsvh4bOJyW4IoaezS",
       "name": "Vishal",
-      "id": 6
+      "id": 1
     }
   ]
 }
